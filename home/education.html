@@ -1,122 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <link rel="stylesheet" href="../blog/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <style>
-        body{
-            background-color: #210A8C;
-        }
-        .bg1{
-          background-image: linear-gradient(to left, #4f4092 , #210A8C);
-        }
-        .bg2-text{
-          color: aqua;
-        }
-    </style>
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../blog/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #210A8C;
+    }
+
+    .bg1 {
+      background-image: linear-gradient(to left, #4f4092, #210A8C);
+    }
+
+    .bg2-text {
+      color: aqua;
+    }
+  </style>
+
 </head>
+
 <body>
-    <!-- navbar -->
-    <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <img src="../images/Group 1000014968logo.png" alt="">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item p-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item p-2">
-              <a class="nav-link" href="#">Courses</a>
-            </li>
-            <li class="nav-item dropdown p-2">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Blog
-              </a>
-              <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Shop</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item p-2">
-              <a class="nav-link" href="../shop/shop.html" tabindex="-1" aria-disabled="true">Shop</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#!" class="nav-link">
-                <img src="../images/Iconcart.png" alt="">
-                <span class="position-absolute top-30 start-10 translate-middle badge rounded-pill bg-success">
-                  0
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </a>
-            </li>
+  <!-- navbar -->
+  <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="../images/Group 1000014968logo.png" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item p-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item dropdown p-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Shop</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link" href="../shop/shop.html" tabindex="-1" aria-disabled="true">Shop</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#!" class="nav-link">
+              <img src="../images/Iconcart.png" alt="">
+              <span class="position-absolute top-30 start-10 translate-middle badge rounded-pill bg-success">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+          </li>
 
-            <li class="nav-item p-2">
-              <a href="#!" class="nav-link">
-                <img src="../images/Iconprofile.png" alt="">
-              </a>
-            </li>
+          <li class="nav-item p-2">
+            <a href="#!" class="nav-link">
+              <img src="../images/Iconprofile.png" alt="">
+            </a>
+          </li>
 
-            <li class="nav-item p-2">
-              <a href="#!" class="nav-link">
-                <img src="../images/Iconsearch.png" alt="">
-              </a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <button class="btn btn-outline-success m-1" type="submit">login</button>
-            <button class="btn bg1 text-light m-1" type="submit">signup</button>
-          </form>
-        </div>
+          <li class="nav-item p-2">
+            <a href="#!" class="nav-link">
+              <img src="../images/Iconsearch.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-success m-1" type="submit">login</button>
+          <button class="btn bg1 text-light m-1" type="submit">signup</button>
+        </form>
       </div>
-    </nav>
-    <!-- /navbar -->
+    </div>
+  </nav>
+  <!-- /navbar -->
 
-    <!-- home page  -->
-    <div class="container p-4">
-      <div class="row mt-4">
-        <div class="col">
-          <div class="p-4 text-light">
-            Successful coaches are visionaries
-          </div>
+  <!-- home page  -->
+  <div class="container p-4">
+    <div class="row mt-4">
+      <div class="col">
+        <div class="p-4 text-light">
+          Successful coaches are visionaries
         </div>
-        
-      </div> 
-       <div class="row ">
+
+
+
+        <div class="row ">
           <div class="col-12 col-sm-9 col-md-6 col-lg-5 fw-bold">
             <div class="h1 text-light p-3 fw-bolder">
-              Good 
+              Good
               <span class="bg2-text">
                 coaching
               </span>
-               is good teaching & nothing else.
+              is good teaching & nothing else.
             </div>
           </div>
           <div class="col">
 
           </div>
-         </div>
-       
-      <div class="row p-3">
-        <div class="col-5 col-sm-5 col-md-2 col-lg-2 ">
-          <button class="btn p-2 btn-outline-light">
-            View Courses
-          </button>
         </div>
-        <div class="col-12 col-md-4 col-sm-12 mt-2">
-          <a href="#!" class="text-decoration-none text-light">Get Free Consultation</a>
+
+        <div class="row p-3">
+          <div class="col-5 col-sm-5 col-md-2 col-lg-2 ">
+            <button class="btn p-2 btn-outline-light">
+              View Courses
+            </button>
+          </div>
+          <div class="col-12 col-md-4 col-sm-12 mt-2">
+            <a href="#!" class="text-decoration-none text-light">Get Free Consultation</a>
+          </div>
         </div>
       </div>
+      <div class="col text-light col-md-8 col-sm-8 col-lg-5 mt-4">
+        <img src="../images/Group 1000014970quotes.png" alt="">
+        <img src="../images/Group 1000014971.png" alt="">
+      </div>
     </div>
-    <!-- /home page  -->
-    
-    <script src="../blog/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+  <!-- /home page  -->
+
+  <script src="../blog/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
