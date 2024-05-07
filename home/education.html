@@ -11,7 +11,16 @@
     body {
       background-color: #f9f8ff;
     }
+        img.random {
+      object-position: top left;
+      object-fit: none;
+      padding: 0 var(--s) var(--s) 0;
+      background: #2AAA94;
+    }
 
+    img:hover {
+      padding: 0;
+    }
     .bg1 {
       background-image: linear-gradient(to left, #4f4092, #210A8C);
     }
@@ -34,6 +43,12 @@
 
     .img-media {
       width: 50vw;
+    }
+    .img-animation{
+      opacity: 0.5;
+    }
+    .img-animation:hover{
+      opacity: 10;
     }
   </style>
 
@@ -482,7 +497,8 @@
   <div class="container ">
     <div class="row">
       <div class="col justify-content-center">
-        <img src="../images/Rectangle 8691img.png" style="width: 85vw;" alt="">
+        <img src="../images/Rectangle 8691img.png" class="img-animation" style="width: 85vw;" alt="">
+        
       </div>
     </div>
   </div>
