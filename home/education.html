@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../home/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
       background-color: #f9f8ff;
@@ -18,13 +19,16 @@
     .bg2-text {
       color: aqua;
     }
+    .br1{
+      border-left: 2px dashed white;
+    }
   </style>
 
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar container container-fluid navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <img src="../images/Group 1000014968logo.png" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -117,7 +121,9 @@
 <!-- cards -->
 <div class="container mt-3">
   <div class="row">
-    <div class="col text-center">
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" class="col text-center">
       <h1>Featured 
         <span class="bg2-text">
           Course
@@ -129,8 +135,8 @@
     </div>
   </div>
   <div class="row justify-content-center ">
-      <div class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2 ">
-          <div class="card cards">
+      <div class="col-8 col-sm-10 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2 ">
+          <div  class="card border-light cards">
               <img src="../images/3d.png" class="card-img-top cards p-2" alt="">
               <div class="card-body">
                   <div class="row justify-content-between ">
@@ -162,7 +168,7 @@
           </div>
       </div>
       <div class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2">
-          <div class="card cards">
+          <div class="card  border-light cards">
               <img src="../images/Mask group (1).png" class="card-img-top cards p-2" alt="">
               <div class="card-body">
                   <div class="row justify-content-between ">
@@ -193,7 +199,7 @@
           </div>
       </div>
       <div class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2">
-          <div class="card cards">
+          <div class="card  border-light cards">
               <img src="../images/Mask group (2).png" class="card-img-top cards p-2" alt="">
               <div class="card-body">
                   <div class="row justify-content-between ">
@@ -223,10 +229,9 @@
               </div>
           </div>
       </div>
-  </div>
-  <div class="row justify-content-center ">
-      <div class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2 ">
-          <div class="card cards">
+  
+  <div class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2 ">
+          <div class="card  border-light cards">
               <img src="../images/travel-concept-3d-illustration-airplane-flying-map-pin 1.png" class="card-img-top cards p-2" alt="">
               <div class="card-body">
                   <div class="row justify-content-between ">
@@ -257,7 +262,7 @@
           </div>
       </div>
       <div class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2">
-          <div class="card cards">
+          <div class="card  border-light cards">
               <img src="../images/3d-jigsaw-puzzle-pieces-pink-background-problem-solving-business-concept-3d-render-illustration 1.png" class="card-img-top cards p-2" alt="">
               <div class="card-body">
                   <div class="row justify-content-between ">
@@ -288,7 +293,7 @@
           </div>
       </div>
       <div class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2">
-          <div class="card cards">
+          <div class="card  border-light cards">
               <img src="../images/online-banking-icon-money-saving-bank-bundles-money-coins-floating-around-purple-background 1.png" class="card-img-top cards p-2" alt="">
               <div class="card-body">
                   <div class="row justify-content-between ">
@@ -318,16 +323,17 @@
               </div>
           </div>
       </div>
-  </div>
+</div>
 </div>
 <!-- /cards -->
 
   <!-- Featured Course start -->
-   
+  
   <div class="justify-content-center mt-3 bg1">
     <div class=" p-5">
+      <div class="container">
       <div class="row justify-content-center ">
-        <div class="col-6">
+        <div class=" col-lg-6 col-md-8 col-sm-10 col-12">
           <h3 class="text-light text-center"> Why 
             <span class="bg2-text">learn</span>
             with our courses?</h3>
@@ -335,28 +341,46 @@
                nesciunt dolorem, ipsam debitis maiores quod provident consectetur</p>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col">
+      <div class="row justify-content-center text-center mt-5">
+        <div data-aos="zoom-in-right" class="col g-3 col-lg-3 col-md-4 col-sm-8 col-10">
           <div class="">
             <img src="../images/online-learning (4).png" alt="" class="">
+            <h5 class="text-light fw-bolder mt-2">01. Learn</h5>
+            <p class="text-light fw-bolder">Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="../images/online-learning (4).png" alt="" class="card-img">
+        <div class="col col-lg-3 g-3 col-md-4 col-sm-8 col-10 br1">
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" class="">
+            <img src="../images/Iconhat.png" alt="" class="">
+            <h5 class="text-light fw-bolder">02. Graduate</h5>
+            <p class="text-light fw-bolder">Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.</p>
+
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="../images/online-learning (4).png" alt="" class="card-img">
+        <div class="col col-lg-3 g-3 col-md-4 col-sm-8 col-10 br1">
+          <div  data-aos="zoom-in-left" class="">
+            <img src="../images/Iconwork.png" alt="" class="">
+            <h5 class="text-light fw-bolder">02. Graduate</h5>
+            <p class="text-light fw-bolder">Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.</p>
+
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
   <!-- Featured Course end -->
 
+  <!-- Top Categories -->
+  
+  <!-- /Top Categories -->
+
   <script src="../home/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
